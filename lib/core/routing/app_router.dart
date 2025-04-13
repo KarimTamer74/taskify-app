@@ -8,6 +8,7 @@ import 'package:todo_app/features/my_tasks/presentation/cubit/my_tasks_cubit.dar
 import 'package:todo_app/features/my_tasks/presentation/view/edit_task_view.dart';
 import 'package:todo_app/features/my_tasks/presentation/view/my_task_view.dart';
 import 'package:todo_app/features/my_tasks/presentation/view/task_details_view.dart';
+import 'package:todo_app/features/settings/presentation/views/settings_view.dart';
 import 'package:todo_app/main_view.dart';
 
 import '../../features/onboarding/presentation/view/onboarding_view.dart';
@@ -46,6 +47,9 @@ class AppRouter {
 
       case Routes.focusModeView:
         return _createRoute(const FocusModeView());
+
+      case Routes.settingsView:
+        return _createRoute(const SettingsView());
       default:
         return null;
     }
