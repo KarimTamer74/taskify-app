@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:todo_app/features/add_task/data/models/task_data_model.dart';
 import 'package:todo_app/features/add_task/presentation/view/add_task_view.dart';
+import 'package:todo_app/features/focus_mode/presentation/views/focus_mode_view.dart';
 import 'package:todo_app/features/home/presentation/view/home_view.dart';
 import 'package:todo_app/features/my_tasks/presentation/cubit/my_tasks_cubit.dart';
 import 'package:todo_app/features/my_tasks/presentation/view/edit_task_view.dart';
@@ -32,12 +33,19 @@ class AppRouter {
           ),
         ));
       case Routes.addTaskView:
-        return _createRoute(const AddTaskView());
+        return _createRoute(
+          const AddTaskView(),
+        );
       case Routes.taskDetailView:
         final taskData = settings.arguments as TaskDataModel;
-        return _createRoute(TaskDetailsView(
-          taskData: taskData,
-        ));
+        return _createRoute(
+          TaskDetailsView(
+            taskData: taskData,
+          ),
+        );
+
+      case Routes.focusModeView:
+        return _createRoute(const FocusModeView());
       default:
         return null;
     }

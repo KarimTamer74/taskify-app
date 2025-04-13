@@ -9,4 +9,5 @@ class Routes {
  static const String addTaskView = '/addTaskView';
   static const String taskDetailView = '/taskDetailView';
   static const String editTaskView = '/editTaskView';
+  static const String focusModeView = '/focusModeView';
 }
