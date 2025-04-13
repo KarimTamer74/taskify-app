@@ -10,14 +10,11 @@ import 'package:todo_app/features/my_tasks/presentation/view/task_details_view.d
 import 'package:todo_app/main_view.dart';
 
 import '../../features/onboarding/presentation/view/onboarding_view.dart';
-import '../../features/splash/presentation/screens/splash_screen.dart';
 import '../routing/routes.dart';
 
 class AppRouter {
   Route? generateRoute(RouteSettings settings) {
     switch (settings.name) {
-      case Routes.signupView:
-        return _createRoute(const SplashScreen());
       case Routes.onBoardingView:
         return _createRoute(const OnboardingView());
       case Routes.mainView:
