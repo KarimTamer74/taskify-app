@@ -1,0 +1,20 @@
+flutter_launcher_icons:
+  image_path: "assets/icons/app_logo.png" # يجب أن تحتوي الصورة على شعار فقط بدون خلفية
+  android: true
+  ios: true
+  adaptive_icon_background: "#ffffff"  # تعيين الخلفية البيضاء
+  adaptive_icon_foreground: "assets/icons/app_logo.png"  # الصورة الأمامية (بدون خلفية)
+
+  web:
+    generate: true
+    image_path: "assets/icons/app_logo.png"
+    background_color: "#ffffff"
+    theme_color: "#ffffff"
+
+  windows:
+    generate: true
+    image_path: "assets/icons/app_logo.png"
+
+  macos:
+    generate: true
+    image_path: "assets/icons/app_logo.png"

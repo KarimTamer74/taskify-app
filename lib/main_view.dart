@@ -3,8 +3,10 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:persistent_bottom_nav_bar_v2/persistent_bottom_nav_bar_v2.dart';
 import 'package:todo_app/core/theme/app_colors.dart';
 import 'package:todo_app/features/add_task/presentation/view/add_task_view.dart';
+import 'package:todo_app/features/focus_mode/presentation/views/focus_mode_view.dart';
 import 'package:todo_app/features/home/presentation/view/home_view.dart';
 import 'package:todo_app/features/my_tasks/presentation/view/my_task_view.dart';
+import 'package:todo_app/features/settings/presentation/views/settings_view.dart';
 
 class MainView extends StatefulWidget {
   const MainView({super.key});
@@ -67,7 +69,7 @@ class _MainViewState extends State<MainView> {
             ),
           ),
           PersistentTabConfig(
-            screen: AddTaskView(),
+            screen: FocusModeView(),
             item: ItemConfig(
               inactiveIcon: Icon(Icons.access_time_outlined,
                   size: 26.sp, color: AppColors.white),
@@ -79,7 +81,7 @@ class _MainViewState extends State<MainView> {
             ),
           ),
           PersistentTabConfig(
-            screen: AddTaskView(),
+            screen: SettingsView(),
             item: ItemConfig(
               inactiveIcon: Icon(Icons.settings_outlined,
                   size: 26.sp, color: AppColors.white),

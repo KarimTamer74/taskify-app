@@ -1,17 +1,17 @@
 flutter_native_splash:
   color: "#ffffff" # خلفية الشاشة العادية
-  image: assets/icons/splash_logo_light.png # لوجو الوضع العادي
+  image: assets/icons/app_logo.png # لوجو الوضع العادي
 
   color_dark: "#000000" # خلفية الوضع الداكن
-  image_dark: assets/icons/splash_logo_dark.png # لوجو الوضع الداكن
+  image_dark: assets/icons/app_logo.png # لوجو الوضع الداكن
 
   android: true
   ios: true
   fullscreen: true
 
   android_12:
-    image: assets/icons/splash_light_android12.png # لوجو خاص بأندرويد 12 (Light)
-    image_dark: assets/icons/splash_dark_android12.png # لوجو الوضع الداكن في أندرويد 12
+    image: assets/icons/app_logo.png # لوجو خاص بأندرويد 12 (Light)
+    image_dark: assets/icons/app_logo.png # لوجو الوضع الداكن في أندرويد 12
     icon_background_color: "#ffffff" # الخلفية خلف اللوجو
     icon_background_color_dark: "#000000" # خلفية داكنة خلف اللوجو
     color: "#ffffff" # خلفية الشاشة (وراء اللوجو)

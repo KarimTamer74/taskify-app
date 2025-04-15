@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:local_auth/local_auth.dart';
+import 'package:todo_app/features/onboarding/presentation/view/onboarding_view.dart';
 import 'package:todo_app/main_view.dart';
 
 import 'core/constants/app_constants.dart';
@@ -33,7 +34,7 @@ class UpTodo extends StatelessWidget {
                   localizationsDelegates: context.localizationDelegates,
                   onGenerateRoute: appRouter.generateRoute,
                   initialRoute: '/',
-                  home: MainView(),
+                  home: OnboardingView(),
                 );
               },
             ));
