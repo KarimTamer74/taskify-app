@@ -17,6 +17,7 @@ abstract class AppImages {
 
 abstract class AppIcons {
   static const String clockIcon = 'assets/icons/clock.svg';
+  //* category icons
   static const String designIcon = 'assets/icons/design_icon.svg';
   static const String groceryIcon = 'assets/icons/grocery_icon.svg';
   static const String healthIcon = 'assets/icons/health_icon.svg';
@@ -28,4 +29,14 @@ abstract class AppIcons {
   static const String sportIcon = 'assets/icons/sport_icon.svg';
   static const String workIcon = 'assets/icons/work_icon.svg';
   static const String universityIcon = 'assets/icons/university_icon.svg';
+
+  //! setting icons
+  static const String settingsIcon = 'assets/icons/settings_icon.svg';
+  static const String profileIcon = 'assets/icons/person_icon.svg';
+  static const String keyIcon = 'assets/icons/key_icon.svg';
+  static const String cameraIcon = 'assets/icons/camera_icon.svg';
+  static const String menuIcon = 'assets/icons/menu_icon.svg';
+  static const String infoIcon = 'assets/icons/info_circle_icon.svg';
+  static const String flashIcon = 'assets/icons/flash_icon.svg';
+  static const String likeIcon = 'assets/icons/like_icon.svg';
 }
