@@ -26,7 +26,9 @@ class EditAndDeleteTaskWidget extends StatelessWidget {
               BlocProvider.of<MyTasksCubit>(context).getTasksByDate();
             }
           },
-          icon: Icon(Icons.edit, color: AppColors.greyShade100),
+          icon: Icon(
+            Icons.edit,
+          ),
           tooltip: 'Edit Task',
           iconSize: 22.sp,
         ),

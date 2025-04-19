@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:todo_app/core/extensions/sizedbox_extensions.dart';
-import 'package:todo_app/core/theme/app_colors.dart';
 import 'package:todo_app/core/utils/app_strings.dart';
 import 'package:todo_app/core/utils/app_styles.dart';
 import 'package:todo_app/features/add_task/data/models/task_category_model.dart';
@@ -46,7 +45,6 @@ class _CategoriesSelectionDialogState extends State<CategoriesSelectionDialog> {
                 ),
                 Icon(
                   Icons.keyboard_arrow_down,
-                  color: AppColors.greyShade500,
                 ),
               ],
             ),
@@ -61,7 +59,6 @@ class _CategoriesSelectionDialogState extends State<CategoriesSelectionDialog> {
       context: context,
       builder: (BuildContext context) {
         return Dialog(
-          backgroundColor: AppColors.darkGray,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(16.r),
           ),

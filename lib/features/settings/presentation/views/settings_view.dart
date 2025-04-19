@@ -12,7 +12,7 @@ class SettingsView extends StatelessWidget {
     return BlocProvider(
       create: (_) => SettingsCubit(),
       child: Scaffold(
-        body: SafeArea(child: SettingsViewBody()),
+        body: SafeArea(child: SettingsViewBody(),),
       ),
     );
   }

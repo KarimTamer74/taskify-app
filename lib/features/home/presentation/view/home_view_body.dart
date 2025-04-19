@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:todo_app/core/extensions/app_theme_ext.dart';
 import 'package:todo_app/core/extensions/sizedbox_extensions.dart';
+import 'package:todo_app/core/theme/app_colors.dart';
 import 'package:todo_app/core/utils/app_assets.dart';
 import 'package:todo_app/core/utils/app_strings.dart';
 import 'package:todo_app/core/utils/app_styles.dart';
@@ -29,7 +31,11 @@ class HomeViewBody extends StatelessWidget {
         15.vGap,
         Text(
           AppStrings.homeSubTitle,
-          style: AppStyles.greyTextStyle16,
+          style: AppStyles.textStyle16.copyWith(
+            color: context.isDarkMode
+                ? AppColors.greyShade500
+                : AppColors.greyShade600,
+          ),
         ),
         Spacer(
           flex: 2,

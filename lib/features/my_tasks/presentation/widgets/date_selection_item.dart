@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:todo_app/core/extensions/app_theme_ext.dart';
 import 'package:todo_app/core/theme/app_colors.dart';
 import 'package:todo_app/core/utils/app_styles.dart';
 
@@ -23,7 +24,11 @@ class DateSelectionItem extends StatelessWidget {
       width: 75.w,
       margin: EdgeInsets.only(right: 12),
       decoration: BoxDecoration(
-        color: isSelected ? AppColors.primaryBlueClr : AppColors.greyShade900,
+        color: isSelected
+            ? AppColors.primaryBlueClr
+            : context.isDarkMode
+                ? AppColors.greyShade900
+                : AppColors.greyShade300,
         borderRadius: BorderRadius.circular(16.r),
       ),
       padding: EdgeInsets.symmetric(vertical: 10),

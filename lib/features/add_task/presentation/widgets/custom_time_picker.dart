@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:todo_app/core/theme/app_colors.dart';
 import 'package:todo_app/core/utils/app_strings.dart';
 import 'package:todo_app/core/utils/app_styles.dart';
 
@@ -46,7 +45,7 @@ class CustomTimePickerField extends StatelessWidget {
                     : AppStyles.textStyle15,
               ),
             ),
-            Icon(Icons.access_time, color: AppColors.greyShade500),
+            Icon(Icons.access_time),
           ],
         ),
       ),

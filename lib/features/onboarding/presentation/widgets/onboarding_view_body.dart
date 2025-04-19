@@ -5,6 +5,7 @@ import 'package:todo_app/core/shared_widgets/custom_text_button.dart';
 import 'package:todo_app/core/utils/app_strings.dart';
 import 'package:todo_app/features/onboarding/presentation/widgets/back_and_next_onboarding_buttons.dart';
 import 'package:todo_app/features/onboarding/presentation/widgets/onboarding_page_view.dart';
+import 'package:todo_app/functions.dart';
 
 class OnboardingViewBody extends StatefulWidget {
   const OnboardingViewBody({super.key});
@@ -33,6 +34,7 @@ class _OnboardingViewBodyState extends State<OnboardingViewBody> {
           child: CustomTextButton(
             text: AppStrings.skip,
             onPressed: () {
+              completeOnboardingView();
               Navigator.pushReplacementNamed(
                 context,
                 Routes.mainView,

@@ -1,9 +1,14 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
+import 'package:todo_app/core/constants/app_constants.dart';
 import 'package:todo_app/core/routing/routes.dart';
 import 'package:todo_app/core/shared_widgets/custom_elevated_button.dart';
 import 'package:todo_app/core/shared_widgets/custom_text_button.dart';
 import 'package:todo_app/core/theme/app_colors.dart';
+import 'package:todo_app/core/utils/app_shared_preferences.dart';
 import 'package:todo_app/core/utils/app_strings.dart';
+import 'package:todo_app/functions.dart';
 
 class BackAndNextOnBoardingButtons extends StatelessWidget {
   const BackAndNextOnBoardingButtons({
@@ -17,6 +22,7 @@ class BackAndNextOnBoardingButtons extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
@@ -35,6 +41,8 @@ class BackAndNextOnBoardingButtons extends StatelessWidget {
           onPressed: () => {
             if (isLastPage)
               {
+               completeOnboardingView(),
+                log("isOnboardingDone: ${AppPreferences().getData(AppConstants.isOnboardingDone)}"),
                 Navigator.pushReplacementNamed(
                   context,
                   Routes.mainView,
