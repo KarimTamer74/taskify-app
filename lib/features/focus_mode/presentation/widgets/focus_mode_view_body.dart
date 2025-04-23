@@ -6,6 +6,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:todo_app/core/extensions/sizedbox_extensions.dart';
 import 'package:todo_app/core/shared_widgets/custom_elevated_button.dart';
 import 'package:todo_app/core/theme/app_colors.dart';
+import 'package:todo_app/core/utils/app_strings.dart';
 import 'package:todo_app/core/utils/app_styles.dart';
 
 class FocusModeViewBody extends StatefulWidget {
@@ -143,7 +144,7 @@ class _FocusModeViewBodyState extends State<FocusModeViewBody> {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 40),
                 child: Text(
-                  'While your focus mode is on, all of your notifications will be off',
+                 AppStrings.focusModeDesc,
                   style: AppStyles.greyTextStyle16,
                   textAlign: TextAlign.center,
                 ),
@@ -153,7 +154,7 @@ class _FocusModeViewBodyState extends State<FocusModeViewBody> {
                 children: [
                   Expanded(
                     child: CustomElevatedButton(
-                      text: _isFocusing ? 'Stop Focus' : 'Start Focus',
+                      text: _isFocusing ? AppStrings.stopFocus : AppStrings.startFocus,
                       onPressed: _isFocusing ? _stopFocus : _startFocus,
                     ),
                   ),
@@ -161,7 +162,7 @@ class _FocusModeViewBodyState extends State<FocusModeViewBody> {
                   Expanded(
                     child: CustomElevatedButton(
                       backgroundColor: AppColors.darkPink,
-                      text: _isPaused ? 'Resume Focus' : 'Pause Focus',
+                      text: _isPaused ? AppStrings.resumeFocus : AppStrings.pauseFocus,
                       onPressed: () {
                         if (_isFocusing) {
                           _isPaused ? _resumeFocus() : _pauseFocus();
