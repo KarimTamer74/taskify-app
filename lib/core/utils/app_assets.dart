@@ -31,6 +31,11 @@ abstract class AppIcons {
   static const String universityIcon = 'assets/icons/university_icon.svg';
 
   //! setting icons
+  static const String moonIcon = 'assets/icons/moon_icon.svg';
+  static const String brightnessIcon = 'assets/icons/brightness_icon.svg';
+
+  static const String notificationOffIcon = 'assets/icons/notification_off.svg';
+  static const String notificationOnIcon = 'assets/icons/notification_on.svg';
   static const String settingsIcon = 'assets/icons/settings_icon.svg';
   static const String profileIcon = 'assets/icons/person_icon.svg';
   static const String keyIcon = 'assets/icons/key_icon.svg';

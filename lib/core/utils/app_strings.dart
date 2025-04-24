@@ -56,6 +56,10 @@ abstract class AppStrings {
 
   //* settings strings
   static const String settings = 'Settings';
+  static const String themeMode = 'Theme Mode';
+  static const String darkMode = 'Dark Mode';
+  static const String lightMode = 'Light Mode';
+  static const String notifications = 'Notifications';
   static const String account = 'Account';
   static const String myName = 'Karim Tamer';
   static const String changeAccountName = "Change account name";
