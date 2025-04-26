@@ -1,5 +1,7 @@
 # 🚀 Taskify App
 
+![Taskify Demo](app_design/onboarding shots.png)
+
 ![Taskify Demo](app_design/shots.png)
 
 > **Taskify** is a modern and minimalistic task management app designed to help you organize your day with ease.  
