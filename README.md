@@ -27,6 +27,7 @@
 - SQFLite (Local Database)
 - Shared Preferences (Local Storage)
 - Local Notifications (flutter_local_notifications)
+- flutter_screenutil (Responsive app design)
 
 ---
 
