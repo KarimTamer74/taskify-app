@@ -1,6 +1,6 @@
 # 🚀 Taskify App
 
-![Taskify Demo](app_design/onboarding shots.png)
+![Taskify Demo](app_design/onboarding_shots.png)
 
 ![Taskify Demo](app_design/shots.png)
 
