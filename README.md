@@ -21,25 +21,22 @@
 ---
 
 ## 🛠 Tech Stack
-- Dart
-- Flutter
-- MVVM Architecture
-- BLoC (State Management)
-- SQFLite (Local Database)
-- Shared Preferences (Local Storage)
-- Local Notifications (flutter_local_notifications)
-- flutter_screenutil (Responsive app design)
+- ![Flutter](https://img.shields.io/badge/Flutter-3.13+-blue?logo=flutter)
+- ![Dart](https://img.shields.io/badge/Dart-3.1+-blue?logo=dart)
+
+**Architecture**: Clean MVVM with BLoC  
+**State Management**: BLoC Pattern  
+**Local Database**: SQFLite & Shared Preferences 
+**Notifications**: flutter_local_notifications  
+**UI**: Responsive design with flutter_screenutil  
 
 ---
+## 📦 Installation
+### Option 1: Download APK
+[![Download APK from Google Drive](https://img.shields.io/badge/Download-Taskify_1.0.0.apk-brightgreen?style=for-the-badge&logo=android)](https://drive.google.com/drive/folders/12lWXLEjITDdCj1uG-GlKcPH2eQIpfRew)
 
-## 📥 Download
-
-[🔗 Download APK from Google Drive](https://drive.google.com/drive/folders/12lWXLEjITDdCj1uG-GlKcPH2eQIpfRew?usp=drive_link)
-
----
-
-## 🚀 Getting Started
-
-1. Clone the repository:
+### Option 2: Build from Source
+1. Clone the repo:
    ```bash
    git clone https://github.com/KarimTamer74/taskify-app.git
+   cd taskify-app
