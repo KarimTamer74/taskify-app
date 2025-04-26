@@ -21,6 +21,7 @@
 ---
 
 ## 🛠 Tech Stack
+- Dart
 - Flutter
 - MVVM Architecture
 - BLoC (State Management)
